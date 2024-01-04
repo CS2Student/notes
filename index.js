@@ -35,7 +35,7 @@ const errorHandler = (error, request, response, next) => {
 // Middleware applications
 app.use(cors())
 app.use(express.json())
-app.use(requestLoggger)
+app.use(requestLogger)
 app.use(express.static('build'))
 
 // Get all notes
